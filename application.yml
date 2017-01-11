@@ -16,7 +16,7 @@ logging:
       pivotal: DEBUG
 
 spring:
-  profiles: cloud
+  profile: cloud
 eureka:
   instance:
     hostname: ${vcap.application.uris[0]}
