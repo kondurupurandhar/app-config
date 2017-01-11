@@ -14,13 +14,9 @@ logging:
   level:
     io:
       pivotal: DEBUG
-eureka:
-  instance:
-    metadataMap:
-      instanceId: ${spring.application.name}:${server.port:8080}
 
 spring:
-  profile: cloud
+  profiles: cloud
 eureka:
   instance:
     hostname: ${vcap.application.uris[0]}
