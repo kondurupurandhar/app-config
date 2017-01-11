@@ -16,5 +16,5 @@ ribbon:
   IsSecure: false
 
 spring: 
-  profile: cloud
+  profiles: cloud
 
