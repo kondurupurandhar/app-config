@@ -16,7 +16,7 @@ logging:
       pivotal: DEBUG
 
 spring:
-  profile: dev
+  profiles: dev
 eureka:
   client:    
     serviceUrl:
