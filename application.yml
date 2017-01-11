@@ -13,19 +13,3 @@ logging:
 
 ribbon: 
   IsSecure: false
-
-spring:
-  profiles: cloud
-eureka:
-  instance:
-    hostname: ${vcap.application.uris[0]}
-    nonSecurePort: 80
-    metadataMap:
-      instanceId: ${vcap.application.instance_id}
-
-spring:
-  profiles: dev
-eureka:
-  client:    
-    serviceUrl:
-      defaultZone: http://service-registry-puran.mybluemix.net # <-- substitute your service-registry url      
