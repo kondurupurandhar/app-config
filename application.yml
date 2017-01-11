@@ -6,3 +6,11 @@ eureka: # <--- ADD NEW SECTION
   instance:
     metadataMap:
       instanceId: ${spring.application.name}:${server.port:8080}
+spring:
+  profiles: cloud
+eureka:
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
+    metadataMap:
+      instanceId: ${vcap.application.instance_id}
