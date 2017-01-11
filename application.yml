@@ -13,7 +13,6 @@ logging:
       pivotal: DEBUG
 
 ribbon: 
-  IsSecure: false
-spring:
-  profiles: cloud
+  SsSecure: false
+
 
