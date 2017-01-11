@@ -15,4 +15,5 @@ logging:
 ribbon: 
   SsSecure: false
 
-
+ribbon: 
+  SsSecure: false
