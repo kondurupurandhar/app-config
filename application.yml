@@ -1,7 +1,4 @@
-logging:
-  level:
-    io:
-      pivotal: DEBUG
+---
 spring:
   profiles: cloud
 eureka:
