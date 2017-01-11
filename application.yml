@@ -13,7 +13,7 @@ logging:
       pivotal: DEBUG
 
 ribbon: 
-  SsSecure: false
+  IsSecure: false
 
-ribbon: 
+ribboon: 
   SsSecure: false
