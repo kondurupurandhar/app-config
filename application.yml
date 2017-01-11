@@ -17,5 +17,4 @@ ribbon:
 
 spring: 
   profiles: cloud
-eureka:
-  instance: 1
+
