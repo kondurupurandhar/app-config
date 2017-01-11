@@ -13,7 +13,7 @@ logging:
 
 ribbon: # <---NEW SECTION
   IsSecure: false
----  # <--- ADD NEW DOCUMENT
+
 spring:
   profiles: cloud
 eureka:
@@ -22,7 +22,7 @@ eureka:
     nonSecurePort: 80
     metadataMap:
       instanceId: ${vcap.application.instance_id}
----  # <--- ADD NEW DOCUMENT      
+
 spring:
   profiles: dev
 eureka:
