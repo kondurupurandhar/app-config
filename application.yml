@@ -1,23 +1,8 @@
-
-security:
-  basic:
-    enabled: false
-
-management:
-  security:
-    enabled: false
-
-ribbon: 
-  IsSecure: false
-
 logging:
   level:
     io:
       pivotal: DEBUG
-
-spring:
-  profiles: dev
-eureka:
-  client:    
-    serviceUrl:
-      defaultZone: http://service-registry-puran.mybluemix.net # <-- substitute your service-registry url
+eureka: # <--- ADD NEW SECTION
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${server.port:8080}
