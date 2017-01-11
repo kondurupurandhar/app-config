@@ -1,18 +1,28 @@
+logging:
+  level:
+    io:
+      pivotal: DEBUG
+eureka:
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${server.port:8080}
+
 ---
-spring:
-  profile: cloud
-  eureka:
-    instance:
-      hostname: ${vcap.application.uris[0]}
-      nonSecurePort: 80
-      metadataMap:
-        instanceId: ${vcap.application.instance_id}
 
 spring:
-  profile: dev
-  eureka:
-    instance:
-      hostname: ${vcap.application.uris[0]}
-      nonSecurePort: 80
-      metadataMap:
-        instanceId: ${vcap.application.instance_id}
+  profiles: cloud
+eureka:
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
+    metadataMap:
+      instanceId: ${vcap.application.instance_id}
+
+---  # <--- ADD NEW DOCUMENT
+
+spring:
+  profiles: dev
+eureka:
+  client:    
+    serviceUrl:
+      defaultZone: http://service-registry-worrisome-counsellor.cfapps.io/eureka/ 
