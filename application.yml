@@ -16,4 +16,6 @@ ribbon:
   IsSecure: false
 
 spring: 
-  profile: cloud
+  profiles: cloud
+eureka:
+  instance: 1
