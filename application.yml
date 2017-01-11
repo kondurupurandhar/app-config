@@ -14,5 +14,6 @@ logging:
 
 ribbon: 
   IsSecure: false
-  
+spring:
+  profiles: cloud
 
