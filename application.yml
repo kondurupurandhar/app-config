@@ -25,4 +25,4 @@ spring:
 eureka:
   client:    
     serviceUrl:
-      defaultZone: http://service-registry-puran.mybluemix.net/ 
+      defaultZone: http://service-registry-puran.mybluemix.net/eureka/
