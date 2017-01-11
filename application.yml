@@ -17,9 +17,3 @@ ribbon:
   
 spring:
   profiles: cloud
-eureka:
-  instance:
-    hostname: ${vcap.application.uris[0]}
-    nonSecurePort: 80
-    metadataMap:
-      instanceId: ${vcap.application.instance_id}
