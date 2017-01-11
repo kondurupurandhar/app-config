@@ -7,14 +7,15 @@ management:
   security:
     enabled: false
 
+ribbon: 
+  IsSecure: false
+
 logging:
   level:
     io:
       pivotal: DEBUG
-
-ribbon: 
-  IsSecure: false
-
-spring: 
-  profiles: cloud
+eureka:
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${server.port:8080}
 
